@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>02 구독 약관</title>
+    <meta charset="utf-8" />
+    <meta content="telephone=no,address=no,email=no" name="format-detection" />
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="blind"> 제목</h1>
+        <h2 class="title">
+            구독 신청하기
+        </h2>
+        <a href="#" target="_blank" class="btn_back">
+            <span class="blind">페이지 돌아가기</span>
+        </a>
+        <a href="#" target="_blank" class="btn_close">
+            <span class="blind">페이지 닫기</span>
+        </a>
+    </header>
+    <div class="wrap">
+        <div class="inner">
+            <div class="content" role="main">
+
+                <ul class="agree_area">
+                    <li class="agree default">
+                        <label>
+                            <input type="checkbox" class="all_check" name="agree_all" id="agree_all">
+                            구독 약관에 모두 동의합니다.
+                        </label>
+                    </li>
+                </ul>
+
+                <ul class="agree_area type_sub">
+                    <li class="agree">
+                        <label>
+                            <input type="checkbox" class="all_check" name="agree" value="1">
+                            서비스 이용약관
+                        </label>
+                        <button type="button" class="btn_more" id="open_more" onclick="open_more()"></button>
+                    </li>
+                    <li style="display: none" id="open_text">
+                        <div class="terms_box">
+                            <div class="artice">
+                                <h3 class="article_title">1. 개인정보의 수집 및 이용 목적</h3>
+                                <p class="article_text">서비스는 상품구매와 개인별 혜택 제공 및 이벤트 참여를 제외한 모든 서비스를 가입하지 않고 이용할 수 있습니다.
+                                </p>
+                                <p class="article_text">가. 은 회원가입 시 서비스 제공과 편리하고 유익한 맞춤 정보를 제공하기 위해 필요한 최소한의 정보를 필수
+                                    사항으로 수집하고 있습니다.</p>
+                                <p class="article_text">나. 은 회원가입 시 서비스 제공과 편리하고 유익한 맞춤 정보를 제공하기 위해 필요한 최소한의 정보를 필수
+                                    사항으로 수집하고 있습니다.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="agree">
+                        <label>
+                            <input type="checkbox" class="all_check" name="agree" value="2">
+                            개인정보 처리방침
+                        </label>
+                        <button type="button" class="btn_more" id="open_more2" onclick="open_more2()"></button>
+
+                    </li>
+                    <li style="display: none" id="open_text2">
+                        <div class="terms_box">
+                            <div class="artice">
+                                <h3 class="article_title">1. 개인정보의 수집 및 이용 목적</h3>
+                                <p class="article_text">서비스는 상품구매와 개인별 혜택 제공 및 이벤트 참여를 제외한 모든 서비스를 가입하지 않고 이용할 수 있습니다.
+                                </p>
+                                <p class="article_text">가. 은 회원가입 시 서비스 제공과 편리하고 유익한 맞춤 정보를 제공하기 위해 필요한 최소한의 정보를 필수
+                                    사항으로 수집하고 있습니다.</p>
+                                <p class="article_text">나. 은 회원가입 시 서비스 제공과 편리하고 유익한 맞춤 정보를 제공하기 위해 필요한 최소한의 정보를 필수
+                                    사항으로 수집하고 있습니다.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="agree">
+                        <label>
+                            <input type="checkbox" class="all_check" name="agree" value="3">
+                            취소·환불 규정 동의
+                        </label>
+                        <button type="button" class="btn_more" id="open_more3" onclick="open_more3()"></button>
+
+                    </li>
+                    <li style="display: none" id="open_text3">
+                        <div class="terms_box">
+                            <div class="artice">
+                                <h3 class="article_title">1. 개인정보의 수집 및 이용 목적</h3>
+                                <p class="article_text">서비스는 상품구매와 개인별 혜택 제공 및 이벤트 참여를 제외한 모든 서비스를 가입하지 않고 이용할 수 있습니다.
+                                </p>
+                                <p class="article_text">가. 은 회원가입 시 서비스 제공과 편리하고 유익한 맞춤 정보를 제공하기 위해 필요한 최소한의 정보를 필수
+                                    사항으로 수집하고 있습니다.</p>
+                                <p class="article_text">나. 은 회원가입 시 서비스 제공과 편리하고 유익한 맞춤 정보를 제공하기 위해 필요한 최소한의 정보를 필수
+                                    사항으로 수집하고 있습니다.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="btn_area">
+            <div class="inner">
+                <button type="button" class="allow_btn type2">
+                    구독 약관에 동의합니다.
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--[D] 마크업 확인용 스크립트입니다. 개발 시 삭제해 주세요-->
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <script>
+        function open_more() {
+            if (document.getElementById('open_text').style.display === 'none') {
+                document.getElementById('open_text').style.display = 'block';
+                document.getElementById('open_more').classList.add('open');
+
+            } else {
+                document.getElementById('open_text').style.display = 'none';
+                document.getElementById('open_more').classList.remove('open');
+
+            }
+        }
+        function open_more2() {
+            if (document.getElementById('open_text2').style.display === 'none') {
+                document.getElementById('open_text2').style.display = 'block';
+                document.getElementById('open_more2').classList.add('open');
+
+            } else {
+                document.getElementById('open_text2').style.display = 'none';
+                document.getElementById('open_more2').classList.remove('open');
+            }
+        }
+        function open_more3() {
+            if (document.getElementById('open_text3').style.display === 'none') {
+                document.getElementById('open_text3').style.display = 'block';
+                document.getElementById('open_more3').classList.add('open');
+            } else {
+                document.getElementById('open_text3').style.display = 'none';
+                document.getElementById('open_more3').classList.remove('open');
+            }
+        }
+    </script>
+
+
+    <script>
+        const agreeChkAll = document.querySelector('input[name=agree_all]');
+        agreeChkAll.addEventListener('change', (e) => {
+            let agreeChk = document.querySelectorAll('input[name=agree]');
+            for (let i = 0; i < agreeChk.length; i++) { agreeChk[i].checked = e.target.checked; }
+        });
+    </script>
+</body>
+
+</html>

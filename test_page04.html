@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>04 공통팝업</title>
+    <meta charset="utf-8" />
+    <meta content="telephone=no,address=no,email=no" name="format-detection" />
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="dimmed">
+    <div class="popup_01" style="display: block;">
+        <div class="pop_txt">
+            <p> 카드 발급이 완료되었습니다.<br>
+                정기결제로 등록 진행 합니다.</p>
+        </div>
+        <div class="pop_btn one">
+            <button type="button">확인</button>
+        </div>
+    </div>
+    <div class="popup_02" style="display: none;">
+        <div class="pop_txt">
+            <p> 신규 발급 대상자입니다.</p>
+            <p class="sub_text"> 제휴카드 발급을 계속 진행하시겠습니까?</p>
+
+        </div>
+        <div class="pop_btn">
+            <button type="button" class="btn_no">아니요</button>
+            <button type="button">네</button>
+
+        </div>
+    </div>
+    <div class="popup_03" style="display: none;">
+        <div class="pop_txt">
+            <p> 신규 발급 대상자가 아닙니다.</p>
+            <p class="sub_text"> 카드 발급 이력이 있어 혜택 제공이 어렵습니다.
+                <br>제휴카드를 발급하시겠습니까?
+            </p>
+        </div>
+        <div class="pop_btn">
+            <button type="button" class="btn_no">아니요</button>
+            <button type="button">네</button>
+
+        </div>
+    </div>
+
+    <header>
+        <h1 class="blind"> 제목</h1>
+        <h2 class="title">
+            구독 신청하기
+        </h2>
+        <a href="#" target="_blank" class="btn_back">
+            <span class="blind">페이지 돌아가기</span>
+        </a>
+        <a href="#" target="_blank" class="btn_close">
+            <span class="blind">페이지 닫기</span>
+        </a>
+    </header>
+
+    <div class="test_wrap" style="position: fixed; right:10px; 
+    bottom:50px; z-index:100; width:130px; z-index:5000; ">
+        <button class="check_01" style="display: block; width:100%; margin-top:3px; padding:2px 4px; 
+            background-color:#001c82; color:#fff; font-size:12px; ">
+            팝업01</button>
+        <button class="check_02" style="display: block; width:100%; margin-top:3px; padding:2px 4px; 
+            background-color:#001c82; color:#fff; font-size:12px; ">
+            팝업02</button>
+        <button class="check_03" style="display: block; width:100%; margin-top:3px; padding:2px 4px; 
+            background-color:#001c82; color:#fff; font-size:12px; ">
+            팝업03</button>
+    </div>
+
+    <!--[D] 마크업 확인용 스크립트입니다. 개발 시 삭제해 주세요-->
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(".check_01").click(function () {
+            $(".popup_01").show();
+            $(".popup_02").hide();
+            $(".popup_03").hide();
+        })
+        $(".check_02").click(function () {
+            $(".popup_02").show();
+            $(".popup_01").hide();
+            $(".popup_03").hide();
+        })
+        $(".check_03").click(function () {
+            $(".popup_03").show();
+            $(".popup_01").hide();
+            $(".popup_02").hide();
+        })
+    </script>
+</body>
+
+</html>
