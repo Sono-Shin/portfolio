@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'NanumBarunGothicBold';
+  src: url(/NanumBarunGothicBold.otf);
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  src: url(/NanumBarunGothic.otf);
+}
+
+/*공통영역*/
+.event-section {position:relative;width:100%;height:100%}
+.event-section__inner {position:relative;height:100%}
+.event-image {display:block;width:100%;vertical-align:top;image-rendering:-webkit-optimize-contrast}
+.event-email {text-decoration:underline !important;color:#ffd200 !important}
+.event-info-modify {display:inline-block;margin-top:6px;padding:6px 7px;border:1px solid #999}
+
+.event-title {    
+    position: absolute;
+    top: 3.2%;
+    left: 50%;
+    font-size: 3.6vw;
+    letter-spacing: -0.5px;
+    color: #4e49f1;
+    font-family: 'NanumBarunGothicBold';
+    transform: translateX(-50%);
+}
+
+.event-text {
+position: absolute;
+    top: 12.6%;
+    left: 50%;
+    width: 100%;
+    font-size: 2.3vw;
+    letter-spacing: 0.4px;
+    color: #363636;
+    font-family: 'NanumBarunGothic';
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.event-text span {    display: block;
+    margin-top: 2.7%;
+    letter-spacing: 0.3px;
+    line-height: 1.16;}
+
+    .event-text strong {color:#ec008c;font-family: 'NanumBarunGothicBold';}
+.event-notice {   
+    position: absolute;
+    bottom: 10%;
+    left: 10.3%;
+    width: 100%;
+}
+.event-notice li {position:relative;margin-top:0.4%;padding-left:2.1%;line-height:1.2;font-size:2vw;letter-spacing:1.18px; color: #fff;
+    font-family: 'NanumBarunGothic';}
+    .event-notice li:first-child {margin-top:0}
+    .event-notice li:last-child {padding-left:0;}
+.event-notice span {position: absolute;
+    top: 3%;
+    left: 0;
+    font-size: 2vw;
+    color: #fff;}
+
+/* 유의사항 */
+.event-section__inner--caution {padding:30px 20px;box-sizing:border-box;background-color:#333}
+.event-section__caution-title {font-size:4.4vw;font-weight:bold;color:#ddd}
+.event-section__caution-list {margin-top:12px}
+.event-section__caution-item {position:relative;margin-top:10px;padding-left:2.5%;font-size:3.6vw;letter-spacing:0.05em;color:#999}
+.event-section__caution-item:first-child {margin-top:0}
+.event-section__caution-item--title {padding-left:0;margin-top:15px}
+.event-section__caution-item>a {font-size:3.6vw;color:#999}
+.item-dot {position:absolute;top:0;left:0;font-weight:bold;font-size:3.6vw;color:#999}
