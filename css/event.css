@@ -10,7 +10,7 @@
 
 /*공통영역*/
 .event-section {position:relative;width:100%;height:100%}
-.event-section__inner {position:relative;height:100%}
+.event-section__inner {position:relative;height:100%;font-family:'NanumBarunGothic';}
 .event-image {display:block;width:100%;vertical-align:top;image-rendering:-webkit-optimize-contrast}
 .event-email {text-decoration:underline !important;color:#ffd200 !important}
 .event-info-modify {display:inline-block;margin-top:6px;padding:6px 7px;border:1px solid #999}
@@ -19,11 +19,13 @@
     position: absolute;
     top: 3.3%;
     left: 50%;
+    width: 100%;
     font-size: 3.5vw;
     letter-spacing: -0.2px;
     color: #4e49f1;
     font-family: 'NanumBarunGothicBold';
     transform: translateX(-50%);
+    text-align: center;
 }
 
 .event-text {
@@ -102,13 +104,12 @@ color:#ffff6b;font-weight:normal;}
 
 
 .event-section__inner--4 .event-title { top: 2.3%;
-    text-align: center;
-    width: 100%;
+
     letter-spacing: -1.2px;
     color: #ffff6b;
     font-size: 3.4vw;}
 
-.event-section__inner--4 .event-text {top: 17.4%;    letter-spacing: -0.4px;}
+.event-section__inner--4 .event-text {top: 17.4%; }
 
 .event-graph {    position: absolute;
     position: absolute;
@@ -130,12 +131,35 @@ color:#ffff6b;font-weight:normal;}
     left: 10.5%;
     }
 
+.event-section__inner--5 .event-title {
+    top:0;
+}
+.event-section__inner--5 .event-text {
+    top: 9.8%;
+}
+.event-btn {position: absolute;      width: 40%;
+    height: 12%;
+    bottom: 48%; left: 50%; transform: translateX(-50%);font-size:0;color:transparent}
+
+.event-section__inner--5 .event-stamp {    flex-wrap: nowrap;
+    bottom: 30%;
+    height: 9vw;
+width: 79%;}
+.event-section__inner--5 .event-stamp__list{  justify-content: center;  width: 33.3%;
+    margin-top: 0%;}
+    
+
+ .event-section__inner--5    .event-stamp__list span {min-height:auto;font-size:2.2vw;}
+ .event-section__inner--5    .event-stamp__list em {color: #ec008c}
+ .event-section__inner--5   .event-stamp__list img {
+    width: 11vw;
+    height: 11vw;
+ }
+  .event-section__inner--5  .event-notice {    bottom: 6.8%;
+    left: 10.3%;}
+
 /* 유의사항 */
-.event-section__inner--caution {padding:30px 20px;box-sizing:border-box;background-color:#333}
-.event-section__caution-title {font-size:4.4vw;font-weight:bold;color:#ddd}
-.event-section__caution-list {margin-top:12px}
-.event-section__caution-item {position:relative;margin-top:10px;padding-left:2.5%;font-size:3.6vw;letter-spacing:0.05em;color:#999}
+.event-section--caution {padding:1% 10%;background-color:#325c9c;font-family:'NanumBarunGothic';}
+.event-section__caution-item {margin-top:5px;font-size:2.2vw;color:#85b5ff}
 .event-section__caution-item:first-child {margin-top:0}
-.event-section__caution-item--title {padding-left:0;margin-top:15px}
-.event-section__caution-item>a {font-size:3.6vw;color:#999}
-.item-dot {position:absolute;top:0;left:0;font-weight:bold;font-size:3.6vw;color:#999}
+.event-section__caution-item>a {color:#85b5ff}
