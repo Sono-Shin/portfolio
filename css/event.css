@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'NanumBarunGothicBold';
-    src: url(/NanumBarunGothicBold.otf);
+    src: url(/fonts/NanumBarunGothicBold.otf);
 }
 
 @font-face {
     font-family: 'NanumBarunGothic';
-    src: url(/NanumBarunGothic.otf);
+    src: url(/fonts/NanumBarunGothic.otf);
 }
 
 /*공통영역*/
@@ -28,6 +28,25 @@
     image-rendering: -webkit-optimize-contrast
 }
 
+.event-navbar {
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 5%;
+    right: 0%;
+}
+
+.event-navbar__btn {
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    font-size: 0;
+}
+
+.event-navbar__btn img {
+    width: 5.4vw;
+}
 
 .event-title {
     position: absolute;
@@ -114,6 +133,7 @@
     font-size: 4.4vw;
     letter-spacing: -1.8px;
     color: #ffff6b;
+    overflow: hidden;
 }
 
 .event-stamp {

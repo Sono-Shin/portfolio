@@ -15,5 +15,5 @@
 
 #### 화면 테스트 기기
 
-- iphone 8
-- iphone 12
+- iphone 15
+- iphone 14
