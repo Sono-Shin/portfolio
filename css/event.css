@@ -17,10 +17,10 @@
 
 .event-title {    
     position: absolute;
-    top: 3.2%;
+    top: 3.3%;
     left: 50%;
     font-size: 3.5vw;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.2px;
     color: #4e49f1;
     font-family: 'NanumBarunGothicBold';
     transform: translateX(-50%);
@@ -32,7 +32,7 @@ position: absolute;
     left: 50%;
     width: 100%;
     font-size: 2.3vw;
-    letter-spacing: 0.4px;
+    letter-spacing: -0.4px;
     color: #363636;
     font-family: 'NanumBarunGothic';
     transform: translateX(-50%);
@@ -41,17 +41,21 @@ position: absolute;
 
 .event-text span {    display: block;
     margin-top: 2.7%;
-    letter-spacing: 0.3px;
     line-height: 1.16;}
 
     .event-text strong {color:#ec008c;font-family: 'NanumBarunGothicBold';}
 .event-notice {   
     position: absolute;
-    bottom: 10%;
-    left: 10.3%;
+    bottom: 9.1%;
+    left: 10.2%;
     width: 100%;
 }
-.event-notice li {position:relative;margin-top:0.4%;padding-left:2.1%;line-height:1.2;font-size:2vw;letter-spacing:1.18px; color: #fff;
+.event-notice li {position: relative;
+    padding-left: 1.4%;
+    line-height: 1.4;
+    font-size: 2vw;
+    letter-spacing: 0.4px;
+    color: #fff;
     font-family: 'NanumBarunGothic';}
     .event-notice li:first-child {margin-top:0}
     .event-notice li:last-child {padding-left:0;}
@@ -62,8 +66,7 @@ position: absolute;
     color: #fff;}
 
 .event-section__inner--3 .event-title {top:0}
-.event-section__inner--3 .event-text {top: 8.9%;
-    letter-spacing: -0.2px}
+.event-section__inner--3 .event-text {top: 8.9%;}
 .event-ticket  {    position: absolute;
     top: 38.8%;
     left: 29%;
@@ -98,18 +101,18 @@ color:#fff;}
 color:#ffff6b;font-weight:normal;}
 
 
-.event-section__inner--4 .event-title { top: 1.7%;
+.event-section__inner--4 .event-title { top: 2.3%;
     text-align: center;
     width: 100%;
     letter-spacing: -1.2px;
     color: #ffff6b;
     font-size: 3.4vw;}
 
-.event-section__inner--4 .event-text {top: 16.6%;    letter-spacing: -0.4px;}
+.event-section__inner--4 .event-text {top: 17.4%;    letter-spacing: -0.4px;}
 
 .event-graph {    position: absolute;
     position: absolute;
-    top: 26%;
+    top: 27%;
     width: 79.3%;
     left: 10.3%;
     height: 8.2%;
@@ -123,12 +126,10 @@ color:#ffff6b;font-weight:normal;}
 .event-section__inner--4 .event-stamp__list{    width: 14%;
     margin-top: 0%;}
     .event-section__inner--4  .event-notice{
-            bottom: 10.5%;
-    left: 10.2%;
+       bottom: 12.3%;
+    left: 10.5%;
     }
- .event-section__inner--4  .event-notice li {
-    letter-spacing:0.38px;
- }
+
 /* 유의사항 */
 .event-section__inner--caution {padding:30px 20px;box-sizing:border-box;background-color:#333}
 .event-section__caution-title {font-size:4.4vw;font-weight:bold;color:#ddd}
