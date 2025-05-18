@@ -153,13 +153,14 @@
 }
 
 .event-stamp__list.on img {
-    display: block;
+    opacity: 1;
 }
 
 .event-stamp__list img {
-    display: none;
     width: 9vw;
-    height: 9vw
+    height: 9vw;
+    opacity: 0;
+    transition: opacity 1s ease;
 }
 
 .event-stamp__list span {
@@ -196,9 +197,10 @@
     position: absolute;
     position: absolute;
     top: 27%;
-    width: 79.3%;
+    width: 80.2%;
     left: 10.3%;
     height: 8.2%;
+    background: url(/img/graph_0.png) no-repeat center / cover;
 }
 
 .event-graph img {
@@ -207,10 +209,6 @@
     left: 0;
     max-width: 100%;
     height: 100%;
-}
-
-.event-graph img.on {
-    display: block;
 }
 
 .event-section__inner--4 .event-stamp {
@@ -306,38 +304,45 @@
     position: absolute;
     animation: slidePath 2s linear infinite;
 }
+
 .event-slide img {
     width: 10.4vw;
     height: 12.4vw;
 }
 
 @keyframes slidePath {
-  0% {
-    top: 28.5%;
-    right: 27.1%;
-  }
-  16.6% {
-    top: 31.5%;
-    right: 29.6%;
-  }
-  33.3% {
-    top: 35.5%;
-    right: 31.6%;
-  }
-  50% {
-    top: 39.4%;
-    right: 33.6%;
-  }
-  66.6% {
-    top: 40.6%;
-    right: 36.6%;
-  }
-  83.3% {
-    top: 42.6%;
-    right: 38.5%;
-  }
-  100% {
-    top: 28.5%;
-    right: 27.1%;
-  }
+    0% {
+        top: 28.5%;
+        right: 27.1%;
+    }
+
+    16.6% {
+        top: 31.5%;
+        right: 29.6%;
+    }
+
+    33.3% {
+        top: 35.5%;
+        right: 31.6%;
+    }
+
+    50% {
+        top: 39.4%;
+        right: 33.6%;
+    }
+
+    66.6% {
+        top: 40.6%;
+        right: 36.6%;
+    }
+
+    83.3% {
+        top: 42.6%;
+        right: 38.5%;
+    }
+
+    100% {
+        top: 28.5%;
+        right: 27.1%;
+    }
 }

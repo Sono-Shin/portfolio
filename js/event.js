@@ -10,3 +10,28 @@ document.getElementById('navbar').onclick = e => {
   }
 };
 
+//게이지 바 이벤트
+  const images = document.querySelectorAll(".guage");
+  const onImage = document.querySelector(".guage.on");
+  let current = 0;
+
+  function animateGauge() {
+    if (current > 0) {
+      images[current - 1].style.display = "none";
+    }
+    if (current < images.length) {
+      images[current].style.display = "block";
+      current++;
+      setTimeout(animateGauge, 300);
+    } else {
+      images.forEach(img => img.style.display = "none");
+      if (onImage) {
+        onImage.style.display = "block";
+      }
+      setTimeout(() => {
+        current = 0; 
+        animateGauge();
+      }, 10000); 
+    }
+  }
+  animateGauge();
