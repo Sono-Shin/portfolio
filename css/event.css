@@ -211,6 +211,10 @@
     height: 100%;
 }
 
+.event-graph img.on {
+    display: block
+}
+
 .event-section__inner--4 .event-stamp {
     flex-wrap: nowrap;
     top: 43%;
