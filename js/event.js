@@ -31,7 +31,7 @@ document.getElementById('navbar').onclick = e => {
       setTimeout(() => {
         current = 0; 
         animateGauge();
-      }, 10000); 
+      }, 5000); 
     }
   }
   animateGauge();
