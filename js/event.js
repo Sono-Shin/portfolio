@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
             graphs[step].classList.add("on");
             stamps[step].classList.add("on");
             step++;
-            setTimeout(animate, 1000);
+            setTimeout(animate, 3000);
         } 
     };
 
