@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'NanumBarunGothicBold';
-    src: url(/fonts/NanumBarunGothicBold.otf);
+    src: url(./fonts/NanumBarunGothicBold.otf);
 }
 
 @font-face {
     font-family: 'NanumBarunGothic';
-    src: url(/fonts/NanumBarunGothic.otf);
+    src: url(./fonts/NanumBarunGothic.otf);
 }
 
 /*공통영역*/
@@ -200,7 +200,7 @@
     width: 80.2%;
     left: 10.3%;
     height: 8.2%;
-    background: url(/img/graph_0.png) no-repeat center / cover;
+    background: url(./img/graph_0.png) no-repeat center / cover;
 }
 
 .event-graph img {
