@@ -169,18 +169,18 @@
                     이벤트 채널 추가를 기념하여 <strong>매일 벨TV를 5회 이상, 10회 이상 시청</strong>시 <br />
                     각 횟수 별 보상을 지급해 드려요.
                 </p>
-                <a href="https://community.withhive.com/highbrowtnf" target="_blank" class="event-btn">
+                <a href="https://community.withhive.com/highbrowtnf" target="_blank" class="event-btn" id="event-btn"  onclick="checkcount();">
                     일별 벨 TV 시청 횟수 <br />
                     보상 정보 확인하기!
                 </a>
                 <ul class="event-stamp">
-                    <li class="event-stamp__list on">
-                        <span><em>@@</em>회 </span>
+                    <li class="event-stamp__list">
+                        <span><em id="event-count"> 0 </em>회 </span>
                     </li>
-                    <li class="event-stamp__list on">
+                    <li class="event-stamp__list stamp-tv" >
                         <span><img src="./img/stamp_common.png" alt="이미 획득하였습니다 스탬프"></span>
                     </li>
-                    <li class="event-stamp__list on">
+                    <li class="event-stamp__list stamp-tv" >
                         <span><img src="./img/stamp_common.png" alt="이미 획득하였습니다 스탬프"></span>
                     </li>
                 </ul>

@@ -252,9 +252,10 @@
 
 .event-section__inner--5 .event-stamp {
     flex-wrap: nowrap;
+    left: 10%;
     bottom: 30%;
     height: 9vw;
-    width: 79%;
+    width: 80%;
 }
 
 .event-section__inner--5 .event-stamp__list {
@@ -267,6 +268,7 @@
 .event-section__inner--5 .event-stamp__list span {
     min-height: auto;
     font-size: 2.2vw;
+    text-align: center;
 }
 
 .event-section__inner--5 .event-stamp__list em {

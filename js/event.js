@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
             graphs[step].classList.add("on");
             stamps[step].classList.add("on");
             step++;
-            setTimeout(animate, 3000);
+            setTimeout(animate, 1500);
         } 
     };
 
@@ -48,3 +48,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     startAnimation(); // 최초 실행
 });
+
+//시청 스탬프 
+function checkcount() {
+  const counter = document.getElementById('event-count');
+  const stamps = document.querySelectorAll('.stamp-tv'); 
+
+  let count = +counter.innerText.trim() + 1;
+  counter.innerText = count;
+
+  if (count === 5 && stamps[0]) {
+    stamps[0].classList.add('on');
+  }
+
+  if (count === 10 && stamps[1]) {
+    stamps[1].classList.add('on');
+  }
+}
