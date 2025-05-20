@@ -18,38 +18,32 @@ document.addEventListener("DOMContentLoaded", () => {
     const graphs = section.querySelectorAll(".guage");
     const stamps = section.querySelectorAll(".event-stamp__list");
 
-    // .on 클래스를 한 번에 제거 (querySelectorAll로 바로 선택)
-    section.querySelectorAll('.guage, .event-stamp__list').forEach(el => el.classList.remove("on"));
-
-    // 이미 .on 이 붙은 첫 번째 위치 찾기 (간단한 for문 사용)
-    let end = graphs.length;  // 기본적으로 마지막까지
+    let onIndex = -1;
     for (let i = 0; i < graphs.length; i++) {
         if (graphs[i].classList.contains("on")) {
-            end = i;  // .on 이 있는 첫 번째 인덱스를 end에 저장
-            break;  // 찾으면 더 이상 반복할 필요 없음
+            onIndex = i;
+            break;
         }
     }
 
-    // 순차 실행
-    let step = 0;
-    const animate = () => {
-        if (step < graphs.length) {
-            graphs[step].classList.add("on");
-            stamps[step].classList.add("on");
-            step++;
-            setTimeout(animate, 1500);
-        } 
-    };
+    graphs.forEach(el => el.classList.remove("on"));
 
-    const startAnimation = () => {
-        step = 0; // step을 초기화하여 다시 처음부터 시작
-        animate();
-    };
-
-    startAnimation(); // 최초 실행
+    if (onIndex >= 0) {
+        let step = 0;
+        const animate = () => {
+            if (step <= onIndex) {
+                graphs[step].classList.add("on");
+                stamps[step].classList.add("on");
+                step++;
+                setTimeout(animate, 1500); 
+            }
+        };
+        animate(); 
+    }
 });
 
-//시청 스탬프 
+
+//채널 이벤트
 function checkcount() {
   const counter = document.getElementById('event-count');
   const stamps = document.querySelectorAll('.stamp-tv'); 

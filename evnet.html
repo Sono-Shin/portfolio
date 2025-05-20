@@ -17,6 +17,7 @@
                 <h1><img class="event-image" src="./img/m_event01.png" alt="타이니팜 공룡 테마 파크 오픈!"></h1>
             </div>
         </div>
+        <!--네비게이션바-->
         <div class="event-navbar" id="navbar">
             <button type="button" class="event-navbar__btn" data-target="1" aria-label="상단으로 스크롤"><img src="./img/navbar_0.png" alt="상단 스크롤 버튼"></button>
             <button type="button" class="event-navbar__btn" data-target="2" aria-label="1번으로 이동"><img src="./img/navbar_1.png" alt="1번 이동 버튼"></button>
@@ -68,6 +69,7 @@
                 </p>
                 <p class="event-ticket"><em class="hide">에어바운스 입장권 보유 수</em>100000</p>
                 <ul class="event-stamp">
+                    <!--li 클레스 'on'추가 시 도장 효과 적용-->
                     <li class="event-stamp__list on">
                         <span>
                             <img src="./img/stamp_common.png" alt="이미 획득하였습니다 스탬프">
@@ -103,6 +105,7 @@
                         <p>마을 출석하기 1회<br /> <strong>(1/1)</strong></p>
                     </li>
                 </ul>
+                <!-- 펭귄 애니메이션 keyframes으로 구현 -->               
                 <div class="event-slide">
                     <img src="./img/penguin.png" alt="펭귄 이미지" class="event-slide__item">
                 </div>
@@ -117,6 +120,7 @@
                     <strong>공룡 테마 에어바운스 존</strong>에서 입장권 획득 개수에 따라 추가 선물을 준비했어요!<br />
                     @@@@@@@@@@@@@@@@@@@@@@@@@
                 </p>
+                <!--img 클레스에 on 클래스가 있으면, 해당 영역까지 게이지가 차오르는 상태 적용-->
                 <div class="event-graph">
                     <img src="./img/graph_1.png" alt="그래프 10" class="guage">
                     <img src="./img/graph_2.png" alt="그래프 20" class="guage">
@@ -127,25 +131,25 @@
                     <img src="./img/graph_7.png" alt="그래프 120" class="guage on">
                 </div>
                 <ul class="event-stamp">
-                    <li class="event-stamp__list ">
+                    <li class="event-stamp__list">
                         <img src="./img/stamp_common.png" alt="이미 획득하였습니다 스탬프">
                     </li>
-                    <li class="event-stamp__list ">
+                    <li class="event-stamp__list">
                         <img src="./img/stamp_common.png" alt="이미 획득하였습니다 스탬프">
                     </li>
-                    <li class="event-stamp__list ">
+                    <li class="event-stamp__list">
                         <img src="./img/stamp_common.png" alt="이미 획득하였습니다 스탬프">
                     </li>
-                    <li class="event-stamp__list ">
+                    <li class="event-stamp__list">
                         <img src="./img/stamp_common.png" alt="이미 획득하였습니다 스탬프">
                     </li>
-                    <li class="event-stamp__list ">
+                    <li class="event-stamp__list">
                         <img src="./img/stamp_common.png" alt="이미 획득하였습니다 스탬프">
                     </li>
-                    <li class="event-stamp__list ">
+                    <li class="event-stamp__list">
                         <img src="./img/stamp_common.png" alt="이미 획득하였습니다 스탬프">
                     </li>
-                    <li class="event-stamp__list ">
+                    <li class="event-stamp__list">
                         <img src="./img/stamp_common.png" alt="이미 획득하였습니다 스탬프">
                     </li>
                 </ul>
@@ -174,8 +178,9 @@
                     보상 정보 확인하기!
                 </a>
                 <ul class="event-stamp">
+                    <!--a 링크 클릭 시 카운트 증가 및 시청횟수 결과에 따른 li 클레스 on 추가 -->
                     <li class="event-stamp__list">
-                        <span><em id="event-count"> 0 </em>회 </span>
+                        <span><em id="event-count">0</em>회</span>
                     </li>
                     <li class="event-stamp__list stamp-tv" >
                         <span><img src="./img/stamp_common.png" alt="이미 획득하였습니다 스탬프"></span>
